@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "209219561704",
+    "project_id": "calculaconsumocombustivel",
+    "storage_bucket": "calculaconsumocombustivel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209219561704:android:11a86eabf56a6bae0e015d",
+        "android_client_info": {
+          "package_name": "com.thiagom.calculaconsumo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209219561704-7kn8364froaml42umuhp3fd918qa5f44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD80cj6cYREc9xdd9Z12HY1ygEbhQlfJkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209219561704-7kn8364froaml42umuhp3fd918qa5f44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

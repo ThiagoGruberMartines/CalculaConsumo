@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.ktx.Firebase;
 import com.thiagom.calculaconsumo.modelo.Usuario;
 
 public class CadastroActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class CadastroActivity extends AppCompatActivity {
     private EditText etEmail;
     private EditText etSenha;
     private Button btnCadastrar;
+    private Usuario usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +41,7 @@ public class CadastroActivity extends AppCompatActivity {
         if (etNome.getText().toString()==""||etEmail.getText().toString()==""||etSenha.getText().toString()==""){
             Toast.makeText(this, "Você deve preencher todos os dados!", Toast.LENGTH_LONG);
         } else {
-            Usuario usuario = new Usuario();
+            usuario = new Usuario();
             usuario.setNome(etNome.getText().toString());
             usuario.setEmail(etEmail.getText().toString());
             usuario.setSenha(etSenha.getText().toString());
