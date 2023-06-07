@@ -7,10 +7,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class AppActivity extends AppCompatActivity {
     private EditText km;
     private EditText lt;
     private TextView consumo;
+    DecimalFormat df = new DecimalFormat("####0.0 km/l");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +36,7 @@ public class AppActivity extends AppCompatActivity {
         } catch (Exception e) {
             valor2 = 0.0;
         }
-        consumo.setText(String.valueOf(valor1 / valor2));
+        consumo.setText(String.valueOf(df.format(valor1 / valor2)));
     }
 
 }

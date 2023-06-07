@@ -37,4 +37,8 @@ public class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    public void salvarDados() {
+        // vai ser utilizado no futuro para salvar os dados no banco de dados
+    }
 }
