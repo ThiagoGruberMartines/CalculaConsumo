@@ -38,5 +38,4 @@ public class AppActivity extends AppCompatActivity {
         }
         consumo.setText(String.valueOf(df.format(valor1 / valor2)));
     }
-
 }

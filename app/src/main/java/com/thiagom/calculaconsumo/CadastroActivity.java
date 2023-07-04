@@ -56,6 +56,7 @@ public class CadastroActivity extends AppCompatActivity {
                     usuario.setId(user.getUid());
                     usuario.salvarDados();
                     startActivity(new Intent(CadastroActivity.this, LoginActivity.class));
+                    Toast.makeText(CadastroActivity.this, "Cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(CadastroActivity.this, "Erro ao cadastrar-se!", Toast.LENGTH_SHORT).show();
                 }
